@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<div id='header' class='header ignielPelangi'>
+</div>
+
+<head>
+  <title>Jam</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="particle-container">
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+  </div>
+  <!-- Menampilkan Jam (Aktif) -->
+  <div id="clock"></div>
+  <div class="jam">
+    <script type="text/javascript">
+      <!--
+      function showTime() {
+        var a_p = "";
+        var today = new Date();
+        var curr_hour = today.getHours();
+        var curr_minute = today.getMinutes();
+        var curr_second = today.getSeconds();
+        if (curr_hour < 12) {
+          a_p = "AM";
+        } else {
+          a_p = "PM";
+        }
+        if (curr_hour == 0) {
+          curr_hour = 12;
+        }
+        if (curr_hour > 12) {
+          curr_hour = curr_hour - 12;
+        }
+        curr_hour = checkTime(curr_hour);
+        curr_minute = checkTime(curr_minute);
+        curr_second = checkTime(curr_second);
+        document.getElementById('clock').innerHTML = curr_hour + ":" + curr_minute + ":" + curr_second + " " + a_p;
+      }
+
+      function checkTime(i) {
+        if (i < 10) {
+          i = "0" + i;
+        }
+        return i;
+      }
+      setInterval(showTime, 500);
+      //
+      -->
+    </script>
+  </div>
+  <!-- Menampilkan Hari, Bulan dan Tahun -->
+  <br>
+  <script type='text/javascript'>
+    <!--
+    var months = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'];
+    var myDays = ['Minggu', 'Senin', 'Selasa', 'Rabu', 'Kamis', 'Jum&#39;at', 'Sabtu'];
+    var date = new Date();
+    var day = date.getDate();
+    var month = date.getMonth();
+    var thisDay = date.getDay(),
+      thisDay = myDays[thisDay];
+    var yy = date.getYear();
+    var year = (yy < 1000) ? yy + 1900 : yy;
+    document.write(thisDay + ', ' + day + ' ' + months[month] + ' ' + year);
+    //
+    -->
+  </script>
+  <br>
+<script>
+    var h=(new Date()).getHours();
+    var m=(new Date()).getMinutes();
+    var s=(new Date()).getSeconds();
+    if (h >= 4 && h < 10) document.writeln("Selamat pagi,");     
+    if (h >= 10 && h < 15) document.writeln("Selamat siang,"); 
+    if (h >= 15 && h < 18) document.writeln("Selamat sore,"); 
+    if (h >= 18 || h < 4) document.writeln("Selamat malam,");
+</script>
+</body>
+  <p>
+      Chindy asih listiayu ningrum
+  </p>
+  <script>
+    function tes() {
+      var jawaban = prompt("i love you ,harus di bales wokwok");
+
+      if (jawaban == "i love you to") {
+        document.write("<h2>I love you to</h2>");
+      } else {
+        document.write("<p>Dahlah Mls!</p>");
+      }
+
+      document.write("<p>Terima kasih sudah menggunakan aplikasi ini!</p>");
+    }
+  </script>
+
+  <br>Klik tombol : <button type="button" onClick="tes()">Klik</button><br>
+  <br>Hasilnya :<br>
+  <span style="color:blue;" id="aaa"></span>
+  <span style="color:red;" id="bbb"></span><br>
+</html>
